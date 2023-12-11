@@ -1,0 +1,622 @@
+*{padding: 0;margin: 0;}
+@font-face {
+    font-family:'Kokoro';
+    src: url(../fonts/Kokoro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Krona One';
+    src: url(../fonts/KronaOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Krub';
+    src: url(../fonts/Krub-Regular.ttf);
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); */
+body{background: #000; color: white;}
+/* шапка сайта/навигация по сайта */
+.header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background: #111;
+}
+.logo {
+    margin-top: 17px;
+    width: 139px;
+    height: 116px;
+    background-image: url(../img/logo.png);
+}
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: center;    
+    margin-top: 60px;
+}
+.menu-pinct {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-family: 'Kokoro';
+}
+.menu-pinct>a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* подвал страниц */
+.footer{
+    display: grid;
+}
+.line-foot {
+    width: 80%;
+    margin-left: 10%;
+    background: #fff;
+    height: 3px;
+}
+.icon-footer {
+    width: 32px;
+    height: 38px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-size: cover;
+    background-image: url(../img/ик\ лого.png);
+}
+.foot{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+/* Превью сайта */
+.one-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.previy {
+    width: 1440px;
+    height: 810px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/превью.png);
+}
+.priv-lef {
+    margin-top: 550px;
+    margin-left: 113px;
+    width: 36.17px;
+    height: 85.7px;
+    background-image: url(../img/лево.png);
+}
+.priv-rig {
+    margin-top: 550px;
+    margin-right: 113px;
+    width: 36.17px;
+    height: 85.7px;
+    background-image: url(../img/право.png);
+}
+/* Блок с популярными дорамами  */
+.name-zad {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+.zag-text-name {
+    font-size: 40px;
+    padding-top: 0.5%;
+    padding-right: 1%;
+}
+.link-left-strel {
+    width: 28px;
+    height: 61px;
+    background-image: url(../img/вектор\ ссылка.png);
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.card {
+    display: grid;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+.card-img {
+    width: 200px;
+    height: 290px;
+}
+.card-text {
+    font-family: 'Krona One';
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5%;
+}
+.card-text>b {
+    font-weight: 900;
+}
+.one {
+    background-image: url(../img/милый\ дом\ б.png);
+}
+.two {
+    background-image: url(../img/док-призрак.png);
+}
+.three {
+    background-image: url(../img/королева.png);
+}
+.four {
+    background-image: url(../img/паразиты\ б.png);
+}
+.five {
+    background-image: url(../img/незнакомец\ из\ ада.png);
+}
+/* Блок с рекомендуемыми дорамами */
+
+.six {
+    background-image: url(../img/потомки\ солнца.png);
+}
+.seven {
+    background-image: url(../img/дьявольски\ судья.png);
+}
+.eight {
+    background-image: url(../img/монстр.png);
+}
+.nine {
+    background-image: url(../img/клетки.png);
+}
+.ten {
+    background-image: url(../img/чер\ сол\ мёбиус.png);
+}
+/* Отзыв на паразита */
+.coment-parazit {
+    display: flex;
+    width: 80%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.text-parazit {
+    width: 60%;
+    font-family: 'Krub';
+    font-size: 24px;
+}
+.img-parazit {
+    width: 300px;
+    height: 427px;
+    margin-left: 15%;
+    background-image: url(../img/паразиты\ отзыв.png);
+    border: 2px   solid white;
+}
+/* Отзыв на Милый дом */
+.center-home{
+    display: block;
+    margin-left: 30%;
+}
+.com-sweet-house {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    justify-content: center;
+}
+.img-cent-com {
+    width: 1136px;
+    height: 462px;
+    margin-top: 5%;
+    background-image: url(../img/мил\ дом\ отзыв.png);
+}
+.com-sweet-house-text{
+    width: 1136px;
+    margin-top: 5%;
+}
+.com-sw-house-left {
+    max-width: 1000px;
+    text-align: left;
+    font-family: 'Krub';
+    font-size: 24px;
+    height: 370px;
+}
+.com-sw-house-right {
+    max-width: 1000px;
+    text-align: right;
+    font-family: 'Krub';
+    margin-left: 140px;
+    font-size: 24px;
+    height: 220px;
+}
+
+/* Вторая страница каталог */
+/* Доромы для Вас */
+.eleven{
+    background-image: url(../img/поезд\ в\ пусан\ б.png);
+}
+.twelve{
+    background-image: url(../img/смертная\ казнь.png);
+}
+.thirteen{
+    background-image: url(../img/маска.png);
+}
+.fourteen{
+    background-image: url(../img/черное\ солнце.png);
+}
+/* Мелодрамы */
+.fifteen{
+    background-image: url(../img/фея\ тяж\ атлетики.png);
+}
+.sixteen{
+    background-image: url(../img/секретарь\ Ким.png);
+}
+.seventeen{
+    background-image: url(../img/цветение\ вишни.png);
+}
+.eighteen{
+    background-image: url(../img/необыч\ дет\ мал.png);
+} 
+.nineteen{
+    background-image: url(../img/антифанатка.png);
+}
+/* Обзор одной дорамы */
+.obzor-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+}
+.obzor-block-text {
+    max-width: 612px;
+    font-size: 24px;
+    font-family:'Kokoro';
+}
+.obzor-block-img {
+    width: 500px;
+    height: 348px;
+    gap: 10px;
+    background-image: url(../img/необ\ дет\ обзор.png);
+}
+/* Актерский состав */
+.zag-text-zag {
+    max-width: 400px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 38%;
+    font-family: 'Krona One';
+    margin-bottom: 2%;
+}
+.actor-sostav-icon {
+    display: flex;
+    justify-content: center;
+    gap: 0 38px;
+    margin-bottom: 5%;
+}
+.actor {
+    display: grid;
+    width: 300px;
+}
+.actor-img {
+    width: 300px;
+    height: 450px;
+}
+.actor-name {
+    font-size: 40px;
+    text-align: center;
+    font-family:'Kokoro';
+}
+.first {
+    background-image: url(../img/актер1.png);
+}
+.second {
+    background-image: url(../img/актер2.png);
+}
+.third {
+    background-image: url(../img/актер3.png);
+}
+
+/* Страница третья медиа */
+/* Статьи */
+.cards__grups {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+}
+.card__grup {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.card-grup-text {
+    margin-top: 5%;
+    height: 144px;
+    color: #000;
+    text-align: center;
+    font-family: 'Kokoro';
+    font-size: 24px;
+}
+.card-grup__link {
+    color: #000;
+    text-align: center;
+    font-family: Kokoro;
+    font-size: 20px;
+    margin-left: 65%;
+}
+/* Видео обзоры и тд */
+.obzor-videos {
+    margin-top: 5%;
+    margin-bottom: 5.5%;
+    display: flex;
+    justify-content: center;
+}
+.obzor-vidtos-text {
+    display: grid;
+}
+.obzor-vid-text {
+    width: 550px;
+    text-align: center;
+    font-family: 'Kokoro';
+    font-size: 32px;
+}
+.obzor-vid-link {
+    font-family: 'Kokoro';
+    font-size: 40px;
+    margin-top: 20%;
+}
+.leftt{
+    margin-left: 60%;
+}
+.video1 {
+    width: 594px;
+    height: 304px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../img/видео1.png);
+}
+.video2 {
+    width: 544px;
+    height: 306px;
+    background-image: url(../img/видео2.png);
+}
+.video3 {
+    width: 600px;
+    height: 337px;
+    background-image: url(../img/видео3.png);
+}
+/* Фотогалерея */
+.fotogalari{
+    width: 1138px;
+    height: 996px;
+    margin-left: 11%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    background-image: url(../img/Group\ 25.png);
+}
+/* Страница четвертая */
+/* Сообщества */
+.cards--community {
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.card-comunity {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background: #FFF;
+}
+.card-comunity-text {
+    margin-top: 5%;
+    color: #000;
+    text-align: center;
+    font-family: 'Kokoro';
+    font-size: 32px;
+    height: 200px;
+}
+.community-btn {
+    display: grid;
+    margin-left: 60%;
+    margin-top: 15%;
+}
+.btns-com-read {
+    color: #000;
+    text-align: center;
+    font-family: 'Kokoro';
+    font-size: 20px;
+}
+.btns-com-join {
+    color: #000;
+    text-align: center;
+    margin-right:25%;
+    font-family: 'Kokoro';
+    font-size: 24px;
+}
+.btn__join {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.button__join {
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    color: #000;
+    text-align: center;
+    font-family: 'Kokoro';
+    font-size: 32px;
+    border: none;
+}
+/* Страница пятая */
+/* Регистрация */
+.registration {
+    display: flex;
+    justify-content: center;
+    gap: 98px;
+}
+.formas {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    justify-content: center;
+}
+.form-string {
+    display: grid;
+    justify-content: center;
+}
+.form-string>label{
+    height: 25px;
+    color: #000;
+    font-family: 'Krona One';
+    font-size: 20px;
+}
+.form-string>input{
+    border: none;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+}
+.form-reg>button {
+    border: none;
+    width: 420px;
+    height: 90px;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-family: 'Krona One';
+    font-size: 40px;
+}
+
+
+.big__logo {
+    width: 540px;
+    height: 452px;
+    background-image: url(../img/big\ logo.png);
+}
+
+/* Личный кабинет */
+.person-cab{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 64%;
+}
+.cab{font-size: 52px;}
+.cab-iformation {
+    gap: 88px;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+}
+.cab-infor {
+    display: grid;
+}
+.cab-inf-string {
+    display: flex;
+    justify-content: center;
+}
+.cab-inf-shablon {
+    width: 180px;
+    font-family: 'Krona One';
+    font-size: 36px;
+}
+.inform-cab-inf {
+    width: 330px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    background: #FFF;
+    font-family: 'Krona One';
+    color: #000;
+    font-size: 30px;
+}
+.cab-icon {
+    display: grid;
+}
+.cab-img {
+    width: 250px;
+    height: 250px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-image: url(../img/акк.png);
+}
+.cab-btm {
+    display: flex;
+    justify-content: center;
+}
+.caddin {
+    border: none;
+    width: 300px;
+    height: 48px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.90);
+}
+/* Недавние просмотренные дорамы */
+.ned{
+    display: flex;justify-content: center;
+}
+.nedavnie{
+    background: #fff;
+    width: 900px;
+    height: 2px;
+}
+.block-text {
+    display: flex;justify-content: center;}
+.zagglav {
+    font-family: 'Krona One';
+    font-size: 30px;
+}
+.dorammas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.doram {
+    width: 150px;
+    height: 217.5px;
+}
+.oni {
+    background-image: url(../img/мил\ дом\ мал.png);
+}
+.twi {
+    background-image: url(../img/паразиты\ мал.png);
+}
+.tri {
+    background-image: url(../img//поезд\ в\ пусан\ мал.png);
+}
+.foi {
+    background-image: url(../img/необыч\ дет\ мал.png);
+}
+.btn__dor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 7%;
+}
+.dor__button {
+    font-family: 'Krona One';
+    font-size: 20px;
+    padding-top: 12px;
+    color: #000;
+    border: none;
+    text-align: center;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.90);
+}
